@@ -1,0 +1,4 @@
+ffmpeg-python>=0.2.0
+bottle>=0.12.19
+uWSGI==2.0.18
+youtube-dl==2021.1.24.1

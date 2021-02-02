@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Make u a gif</title>
+<body>
+<h1>Make u a gif</h1>
+
+<form action="/submit">
+    <p>
+        <label for="url">URL:</label>
+        <input id="url" name="url" type="url" />
+    </p>
+
+    <p>
+        <label for="size">Quality:</label>
+        <select id="size" name="size">
+            <option value="480">480</option>
+            <option value="720">720</option>
+            <option value="1080">1080</option>
+        </select>
+
+        <label for="fps">Frame Rate:</label>
+        <select id="fps" name="fps">
+            <option value="16">16</option>
+            <option value="25" selected>25</option>
+            <option value="33">33</option>
+            <option value="50">50</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="start">Start time (seconds):</label>
+        <input id="start" name="start" type="number" value="0"/>
+    
+        <label for="end">End time:</label>
+        <input id="end" name="end" type="number" value="0"/>
+    </p>
+
+    <p>
+        <input type="submit" value="Make it">
+    </p>
+
+</form>

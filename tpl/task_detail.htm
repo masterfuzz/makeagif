@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>"{{t.title}}"</title>
+    </head>
+    <body>
+        <h1>Task detail for "{{t.title}}"</h1>
+        % if t.done:
+            <h2>Done!</h2>
+            <p>
+                Here you go:
+                <img src="/gifs/{{t.uuid}}"/>
+            </p>
+        % end
+        % if t.error_message:
+            <h2>Error: {{t.error_message}}</h2>
+        % end
+
+        <hr/>
+
+        <img src="{{t.thumbnail}}" />
+        <table>
+            <tr>
+                <td>Status:</td>
+                <td>{{t.status}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
